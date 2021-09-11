@@ -1,3 +1,47 @@
 .App {
   text-align: center;
+  font-family: IRANYekanWebFn Light;
+  .section-1{
+    background: linear-gradient(180deg, #F5B152 11.28%, rgba(254, 236, 236, 0) 107.84%);
+    width: 100vw;
+    height: 100vh;
+    color: #3E2F18;
+
+    .head-menu{
+      padding: 1rem 6%;
+      background: transparent;
+      @media screen and (max-width: 830px) {
+        background: #fff;
+      }
+      .head-menu-holder{
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        
+        .ham-menu{
+          display: none;
+          @media screen and (max-width: 830px) {
+            display: inline-block;
+            margin-left: auto;
+          }
+        }
+        h4{
+          margin: 0 0 0 auto;
+          display: inline-block;
+          @media screen and (max-width: 830px) {
+            display: none;
+          }
+        }
+
+        span{
+          margin: 0 1rem;
+          font-size: 85%;
+          font-weight: 600;
+          @media screen and (max-width: 830px) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,20 @@
+
+.button-design{
+    padding: 11px 15px;
+    font-family: IRANYekanWebFn Light;
+    font-weight: 800;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 6.8rem;
+    border: none;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(74, 74, 74, 0.45);
+    box-shadow: 0px 0px 4px 1px rgba(74, 74, 74, 0.45);
+}
+
+.gradient{
+    background: linear-gradient(90deg, #9E5D1C 0%, #F5B254 100%);
+    border-radius: 100px;
+    color: #fff;
+}

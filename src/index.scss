@@ -1,13 +1,18 @@
+@import url(//db.onlinewebfonts.com/c/6f8cf49b56f6265eeca4e3f3470f3e59?family=IRANYekanWebFn+Light);
+
+@font-face {
+  font-family: "IRANYekanWebFn Light";
+  src: url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.eot");
+  src: url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.woff") format("woff"), url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6f8cf49b56f6265eeca4e3f3470f3e59.svg#IRANYekanWebFn Light") format("svg");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "IRANYekanWebFn Light" ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "IRANYekanWebFn Light"
 }
