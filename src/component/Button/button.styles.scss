@@ -2,7 +2,7 @@
 .button-design{
     padding: 11px 15px;
     font-family: IRANYekanWebFn Light;
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 12px;
     display: flex;
     align-items: center;
@@ -17,4 +17,24 @@
     background: linear-gradient(90deg, #9E5D1C 0%, #F5B254 100%);
     border-radius: 100px;
     color: #fff;
+    .arrow{
+        path{
+            fill: #fff;
+        }
+    }
+}
+
+
+.white {
+    background: #fff;
+    border-radius: 100px;
+    color: #000;
+    font-weight: bolder;
+    font-size: 1em;
+    width: 7.6rem;
+    .arrow {
+        path {
+            fill: #000;
+        }
+    }
 }

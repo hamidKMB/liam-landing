@@ -50,25 +50,72 @@ function App() {
             تغذیه می‌کند. با این محصول دیگر پوست خسته و کدر معنا ندارد!
           </p>
           <div className="button-container">
-            <Button text="خرید کنید"/>
+            <Button text="خرید کنید" />
           </div>
         </div>
       </section>
       <section className="section-2">
-          <div className="section-2-head">
-            <h1>
-              مزایای سرم روشن کننده تراست
-            </h1>
-            <div className="border-bottom" />
+        <div className="section-2-head">
+          <h1>مزایای سرم روشن کننده تراست</h1>
+          <div className="border-bottom" />
+        </div>
+        <div className="benefits-container">
+          <img
+            src={require("./assets/Pictures/brightening-serum1 1.png").default}
+            alt="brightening-serum1"
+            className="brightning-serum"
+          />
+          <div className="benefits-holder">
+            {benefits.map((item, index) => (
+              <Benefit key={index} benefit={item.benefit} logo={item.logo} />
+            ))}
           </div>
-          <div className="benefits-container">
-              <img src={require("./assets/Pictures/brightening-serum1 1.png").default} alt="brightening-serum1" className="brightning-serum"/>
-              <div className="benefits-holder">
-                {
-                  benefits.map((item, index) => <Benefit key={index} benefit={item.benefit} logo={item.logo}/>)
-                }
-              </div>
+        </div>
+      </section>
+      <section className="section-3">
+        <div className="performance-part">
+          <div className="performance-description">
+            <h3 className="performance-head">عملکرد سرم روشن‌کننده تراست</h3>
+            <p className="performance-paragraph">
+              سرم روشن‌کننده تراست به عنوان یک محصول مراقبتی و درمانی پوست، ضمن
+              آبرسانی و مرطوب‌کنندگی پوست، به مقابله با لک‌های آن می‌پردازد.
+              مواد مؤثره موجود در این محصول با مهار آنزیم تیروزیناز، تولید
+              ملانین در پوست را کاهش داده و از ایجاد لک بر روی آن جلوگیری
+              می‌کند.
+              <br /> این محصول با کاهش رنگدانه‌های پوست، پوست را روشن کرده و رنگ
+              آن را در تمام نقاط یکسان می‌کند. <br />
+              همچنین با داشتن خواص آنتی‌اکسیدانی، رادیکال‌های آزاد را مهار کرده
+              و از آسیب آن‌ها به پوست جلوگیری می‌کند.
+            </p>
           </div>
+          <img
+            src={require("./assets/Pictures/image 161360587.png").default}
+            alt="skin"
+            className="skin-image"
+          />
+        </div>
+        <div className="buy-now-part">
+        <div className="wrapper">
+          <div className="container">
+            <h1>برای دست‌یابی به پوستی روشن، یکدست و بدون لک عجله کنید!</h1>
+          </div>
+          <div className="button-and-brightness-text">
+            <div className="button-container">
+              <Button text="خرید کنید" white />
+            </div>
+            <span>BOOST BRIGHTNESS</span>
+          </div>
+        </div>
+          <div className="image-container">
+            <img
+              src={
+                require("./assets/Pictures/brightening-serum1 2.png").default
+              }
+              alt="serum-brightning-2"
+              className="serum-brightning-2"
+            />
+          </div>
+        </div>
       </section>
     </div>
   );

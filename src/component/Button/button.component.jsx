@@ -4,9 +4,9 @@ import {ReactComponent as ArrowLogo} from "./arrow.svg";
 
 import "./button.styles.scss"
 
-const Button = ({text}) => {
+const Button = ({text, white}) => {
     return (
-      <button className="button-design gradient">
+      <button className={`button-design ${white ? "white" : "gradient"}`}>
         {text} <ArrowLogo />
       </button>
     );
