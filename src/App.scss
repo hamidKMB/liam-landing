@@ -4,7 +4,7 @@
   .section-1{
     background: linear-gradient(180deg, #F5B152 11.28%, rgba(254, 236, 236, 0) 107.84%);
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     color: #3E2F18;
 
     .head-menu{
@@ -24,6 +24,7 @@
             display: inline-block;
             margin-left: auto;
           }
+
         }
         h4{
           margin: 0 0 0 auto;
@@ -43,5 +44,49 @@
         }
       }
     }
+    .product-preview{
+      margin: 0 auto;
+      .product-advertising-slogan{
+        font-weight: bolder;
+        font-size: 2.5rem;
+        @media screen and (max-width: 504px) {
+          font-size: 1.4rem;
+        }
+      }
+      .product-pictures{
+        .side-product-img{
+          margin: 0 0 2rem 1.5rem;
+          width: 10rem;
+          @media screen and (max-width: 504px) {
+            display: none;
+          }
+        }
+        .main-product-img{
+          width: 10rem;
+          margin: 0 auto;
+        }
+        .square{
+          margin: 0 2rem 2rem 0;
+          width: 8rem;
+          @media screen and (max-width: 504px) {
+            display: none;
+          }
+        }
+      }
+      .product-description{
+        text-align: right;
+        max-width: 26rem;
+        margin: 20px auto;
+        font-weight: bolder;
+        width: 80%;
+      }
+    }
+  }
+  .section-2{
+    .button-container{
+      display: flex;
+      justify-content: center;
+    }
+    
   }
 }
