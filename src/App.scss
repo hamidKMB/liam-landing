@@ -2,8 +2,8 @@
   text-align: center;
   font-family: IRANYekanWebFn Light;
   .section-1{
-    background: linear-gradient(180deg, #F5B152 11.28%, rgba(254, 236, 236, 0) 107.84%);
-    width: 100vw;
+    background: linear-gradient(180deg, #F5B152 11.28%, rgba(254, 236, 236, 0) 97.84%);
+    // width: 100vw;
     height: 100%;
     color: #3E2F18;
 
@@ -47,6 +47,7 @@
     .product-preview{
       margin: 0 auto;
       .product-advertising-slogan{
+        margin-top: 0.5rem;
         font-weight: bolder;
         font-size: 2.5rem;
         @media screen and (max-width: 504px) {
@@ -79,14 +80,50 @@
         margin: 20px auto;
         font-weight: bolder;
         width: 80%;
+        line-height: 30px;
+      }
+      .button-container{
+        display: flex;
+        justify-content: center;
       }
     }
   }
   .section-2{
-    .button-container{
+    .section-2-head{
+      margin: 5rem auto 2rem;
+      display: inline-block;
+      width: fit-content;
+      h1{
+        margin-bottom: 1rem;
+        background: -webkit-linear-gradient(180deg, #F5B152, #9E5D1C);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @media screen and (max-width: 384px) {
+          font-size: 1rem;
+        }
+      }
+      .border-bottom{
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, #9E5D1C 0%, #F5B254 100%);
+        transform: rotate(180deg);
+      }
+    }
+    .benefits-container{
       display: flex;
       justify-content: center;
+      align-items: center;
+      .brightning-serum{
+        margin-left: 4rem;
+        width: 11rem;
+        @media screen and (max-width: 748px) {
+          display: none;
+        }
+      }
+      .benefits-holder{
+        display: flex;
+        flex-direction: column;
+      }
     }
-    
   }
 }

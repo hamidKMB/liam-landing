@@ -1,13 +1,15 @@
 import React from "react"
 
 import Button from "./component/Button/button.component";
+import Benefit from "./component/benefit/benefit.component";
 
 import {ReactComponent as HamMenu} from "./hamburge-menu.svg";
+
+import { menuItems, benefits } from "./data/data";
 
 import './App.scss';
 
 function App() {
-  const menuItems = ["مزایا", "عملکرد", "مواد موثره", "روش استفاده", "سوالات متداول"]
   return (
     <div className="App">
       <section className="section-1">
@@ -47,13 +49,26 @@ function App() {
             کرده، لک‌های پوستی‌اش را برطرف ساخته و آن را با مواد مغذی مناسب
             تغذیه می‌کند. با این محصول دیگر پوست خسته و کدر معنا ندارد!
           </p>
-        </div>
-      </section>
-      <section className="section-2">
           <div className="button-container">
             <Button text="خرید کنید"/>
           </div>
-
+        </div>
+      </section>
+      <section className="section-2">
+          <div className="section-2-head">
+            <h1>
+              مزایای سرم روشن کننده تراست
+            </h1>
+            <div className="border-bottom" />
+          </div>
+          <div className="benefits-container">
+              <img src={require("./assets/Pictures/brightening-serum1 1.png").default} alt="brightening-serum1" className="brightning-serum"/>
+              <div className="benefits-holder">
+                {
+                  benefits.map((item, index) => <Benefit key={index} benefit={item.benefit} logo={item.logo}/>)
+                }
+              </div>
+          </div>
       </section>
     </div>
   );

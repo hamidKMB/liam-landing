@@ -1,0 +1,15 @@
+.benefit-block{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 1rem 0.4rem;
+    text-align: right;
+    line-height: 20px;
+    @media screen and (max-width: 484px) {
+        font-size: 90%;
+    }
+    .benefit-logo{
+        margin-left: 1rem;
+        width: 1.8rem;
+    }
+}
