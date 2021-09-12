@@ -4,6 +4,9 @@ import Button from "./component/Button/button.component";
 import Benefit from "./component/benefit/benefit.component";
 
 import {ReactComponent as HamMenu} from "./hamburge-menu.svg";
+import {ReactComponent as InstagramLogo} from "./assets/logos/instagram-logo.svg"
+import { ReactComponent as LiaTeamLogo } from "./assets/logos/Liam-logo.svg";
+
 
 import { menuItems, benefits } from "./data/data";
 
@@ -95,17 +98,17 @@ function App() {
           />
         </div>
         <div className="buy-now-part">
-        <div className="wrapper">
-          <div className="container">
-            <h1>برای دست‌یابی به پوستی روشن، یکدست و بدون لک عجله کنید!</h1>
-          </div>
-          <div className="button-and-brightness-text">
-            <div className="button-container">
-              <Button text="خرید کنید" white />
+          <div className="wrapper">
+            <div className="container">
+              <h1>برای دست‌یابی به پوستی روشن، یکدست و بدون لک عجله کنید!</h1>
             </div>
-            <span>BOOST BRIGHTNESS</span>
+            <div className="button-and-brightness-text">
+              <div className="button-container">
+                <Button text="خرید کنید" white />
+              </div>
+              <span>BOOST BRIGHTNESS</span>
+            </div>
           </div>
-        </div>
           <div className="image-container">
             <img
               src={
@@ -116,6 +119,29 @@ function App() {
             />
           </div>
         </div>
+      </section>
+      <section className="section-4">
+        <div className="container">
+            <div className="company-details">
+              <div className="wrapper">
+                <h3>صفحه لندینگ سرم روشن‌کننده تراست</h3>
+                <div className="company-contact-ways">
+                  <a href="#" className="company-details-items">
+                    <InstagramLogo/>
+                    <span>صفحه رسمی اینستاگرام لیاتیم</span>
+                  </a>
+                  <a href="#" className="company-details-items">
+                    <LiaTeamLogo/>
+                    <span>وب‌سایت لیاتیم</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="product-box">
+              <img src={require("./assets/Pictures/box3.png").default} alt="product-box"/>
+              <img src={require("./assets/Pictures/box2P.png").default} alt="product-box"/>
+            </div>
+          </div>
       </section>
     </div>
   );

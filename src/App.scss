@@ -127,6 +127,7 @@
     }
   }
   .section-3{
+    margin-bottom: 12rem;
     .performance-part{
       background: linear-gradient(90deg, rgba(16, 13, 10, 0.1) 0%, rgba(245, 178, 84, 0.1) 100%);
       display: flex;
@@ -145,7 +146,7 @@
       }
       .performance-description{
         text-align: right;
-        padding: 5% 5% 0;
+        padding: 5% 7% 0;
         .performance-head{
           margin-top: 0;
         }
@@ -245,6 +246,58 @@
           bottom: -30px;
         }
       }
+      }
+    }
+  }
+  .section-4{
+    margin-bottom: 10rem;
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        @media screen and (max-width: 596px) {
+          flex-direction: column;
+        }
+        .company-details{
+          .wrapper{
+            display: flex;
+            flex-direction: column;
+            margin: 0 5rem 0 0;
+            @media screen and (max-width: 596px) {
+             margin: 0 0 2rem 0;
+             justify-content: center;
+             align-items: center;
+            }
+            .company-contact-ways{
+              display: flex;
+              flex-direction: column;
+              @media screen and (max-width: 596px) {
+                flex-direction: row;
+              }
+              a.company-details-items{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                border: none;
+                span{
+                  color: black;
+                  @media screen and (max-width: 596px) {
+                    display: none;
+                  }
+                }
+                .logo{
+                  margin-left: 1rem;
+                  width: 2rem;
+                }
+              }
+            }
+          }
+        }
+      .product-box{
+        width: 50%;
+        @media screen and (max-width: 596px) {
+          width: 100%;
+        }
       }
     }
   }
